@@ -18,7 +18,7 @@ php-fpm:
 mysql:
     build: docker-images/mysql
     volumes:
-        - ./mysql:/var/lib/mysql
+        - ./db:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: mysql-root-pwd
         MYSQL_USER: mysql-user

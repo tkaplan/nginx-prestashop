@@ -66,7 +66,7 @@ Your directory should now look like this:
     │   └── php-fpm
     ├── documentation
     │   └── ...
-    ├── PrestaShop
+    ├── prestashop
     │   ├── ...
     ├── install-Nginx-PrestaShop.sh
     ├── LICENSE
