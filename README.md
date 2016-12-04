@@ -19,7 +19,6 @@ cd nginx-prestashop
 
  ```
 .
-├── docker-compose-shared.yml
 ├── docker-compose.yml
 ├── docker-images
 │   ├── mysql
@@ -67,7 +66,7 @@ Your directory should now look like this:
     ├── documentation
     │   └── ...
     ├── prestashop
-    │   ├── ...
+    │   └── ...
     ├── install-Nginx-PrestaShop.sh
     ├── LICENSE
     └── README.md
