@@ -23,7 +23,7 @@ mysql:
         MYSQL_ROOT_PASSWORD: mysql-root-pwd
         MYSQL_USER: mysql-user
         MYSQL_PASSWORD: mysql-pwd
-        MYSQL_DATABASE: prestaShop
+        MYSQL_DATABASE: prestashop
 
 ui4docker:
     image: uifd/ui-for-docker:latest

@@ -53,7 +53,7 @@ cd nginx-prestashop
 3. Set the correct user and group ownership for the PrestaShop directory (run as root).
 
  ```bash
-sudo chown -R www-data:www-data PrestaShop/
+sudo chown -R www-data:www-data prestashop/
  ```
 Your directory should now look like this:
 
@@ -89,14 +89,14 @@ All the steps are defined in this script [install-Nginx-PrestaShop](install-Ngin
             MYSQL_ROOT_PASSWORD: mysql-root-pwd
             MYSQL_USER: mysql-user
             MYSQL_PASSWORD: mysql-pwd
-            MYSQL_DATABASE: prestaShop
+            MYSQL_DATABASE: prestahop
  ```
 
-2. Start the projects using `docker-compose up`.
+2. Start your PrestaShop using `docker-compose up`.
 
 3. Follow the installation steps of PrestaShop.
 
-   The MySQL server is running at 172.0.0.3.
+   The MySQL server is running at *172.17.0.3*.
 
    Do not forget to delete the `install` folder in the PrestaShop directory in the end. As the directory now belongs to 'www-data' switch to that user or run as root:
 
@@ -104,19 +104,23 @@ All the steps are defined in this script [install-Nginx-PrestaShop](install-Ngin
     sudo rm -r PrestaShop/install
  ```
 
+### Stopping your PrestaShop
+
+To stop your PrestaShop simply type: `docker-compose stop`.
+
 ## Containers
 
 ### Overview
 
-The dockerized PrestaShop project consists of the following containers:
+The dockerized version of your PrestaShop consists of the following containers:
 
   1. [Nginx](docker-images/nginx/Dockerfile) web server image
   2. [PHP](docker-images/php-fpm/Dockerfile) php:fpm image
   3. [MySQL](docker-images/mysql/Dockerfile) MySQL image
   4. [phpMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) PHP My Admin image (on port 9010)
-  5. [UI For Docker](https://hub.docker.com/r/uifd/ui-for-docker/) UI for Docker image (on port 9020). **Added for illustrative purposes only.**
+  5. [UI For Docker](https://hub.docker.com/r/uifd/ui-for-docker/) UI for Docker image (on port 9000). **Added for illustrative purposes only, not needed for production.**
 
-The screen shot below visualizes the setup:
+The screen shot below visualizes the setup (sceen shot taken from 'UI For Docker', tab 'Containers Network'):
 
 [![NGINX PrestaShop: Containers Network](documentation/containersNetwork.png)](documentation/containersNetwork-png)
 
@@ -126,9 +130,13 @@ The screen shot below visualizes the setup:
 PBy default dummy certificates are used (see [docker-images/nginx/Dockerfile](docker-images/nnginx/Dockerfile)).
 If you want to use a different certificate you can override the key and cert with your own certificates. If proper certificates are used **HTTP2** is supported.
 
+### To Do
+
+- Add an example of how to link to an existing MySQL database.
+
 ### Thanks
 
-Thanks to Andreas Koch for his docker excellent examples on Dockerizing Magento. Have a look at a blog-post of his: [Dockerizing  Magento](https://andykdocs.de/development/Docker/Dockerize-Magento).
+Thanks to Andreas Koch for his excellent examples on dockerizing [Magento](https://magento.com/). Have a look at a blog-post of his: [Dockerizing  Magento](https://andykdocs.de/development/Docker/Dockerize-Magento).
 
 
 ## Licensing
