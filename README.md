@@ -73,7 +73,7 @@ Your directory should now look like this:
     └── README.md
  ```
 
-All the steps are defined in this script [install-Nginx-PrestaShop](install-Nginx-PrestaShop).
+All the steps are defined in this script [install-Nginx-PrestaShop.sh](install-Nginx-PrestaShop.sh).
 
 
 ## Starting your PrestaShop
@@ -127,7 +127,7 @@ The screen shot below visualizes the setup (sceen shot taken from 'UI For Docker
 
 ### Using different SSL certificates
 
-PBy default dummy certificates are used (see [docker-images/nginx/Dockerfile](docker-images/nnginx/Dockerfile)).
+PBy default dummy certificates are used (see [docker-images/nginx/Dockerfile](docker-images/nginx/Dockerfile)).
 If you want to use a different certificate you can override the key and cert with your own certificates. If proper certificates are used **HTTP2** is supported.
 
 ### To Do
