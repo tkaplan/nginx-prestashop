@@ -1,0 +1,54 @@
+nginx:
+    build: docker-images/nginx
+    ports:
+        - "80:80"
+        - "443:443"
+    volumes_from:
+       - php-fpm
+    links:
+      - "php-fpm:php-fpm"
+
+php-fpm:
+    build: docker-images/php-fpm
+    volumes:
+        - ./prestashop/:/html/
+    links:
+        - "mysql:mysql"
+
+mysql:
+    build: docker-images/mysql
+    volumes:
+        - ./mysql:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: mysql-root-pwd
+        MYSQL_USER: mysql-user
+        MYSQL_PASSWORD: mysql-pwd
+        MYSQL_DATABASE: prestaShop
+
+ui4docker:
+    image: uifd/ui-for-docker:latest
+    privileged: true
+    ports:
+       - "9000:9000"
+    volumes:
+       - /var/run/docker.sock:/var/run/docker.sock
+
+phpadmin:
+   image: phpmyadmin/phpmyadmin
+   ports:
+       - "9010:80"
+   links:
+       - "mysql:mysql"
+   environment:
+       PMA_HOST: "mysql"
+       PMA_PORT: "3306"
+
+#cadvisor:
+#   image: google/cadvisor
+#   ports:
+#       - "9020:8080"
+#   volumes:
+#       - /:/rootfs:ro
+#       - /var/run:/var/run:rw
+#       - /sys:/sys:ro
+#       - /var/lib/docker/:/var/lib/docker:ro
