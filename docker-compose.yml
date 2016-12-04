@@ -17,6 +17,7 @@ php-fpm:
 
 mysql:
     build: docker-images/mysql
+    hostname: sql-server
     volumes:
         - ./db:/var/lib/mysql
     environment:

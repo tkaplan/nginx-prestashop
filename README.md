@@ -96,7 +96,7 @@ All the steps are defined in this script [install-Nginx-PrestaShop.sh](install-N
 
 3. Follow the installation steps of PrestaShop.
 
-   The MySQL server is running at *172.17.0.3*.
+   The MySQL's server name is `sql-server`.
 
    Do not forget to delete the `install` folder in the PrestaShop directory in the end. As the directory now belongs to 'www-data' switch to that user or run as root:
 
