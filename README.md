@@ -83,6 +83,7 @@ All the steps are defined in this script [install-Nginx-PrestaShop.sh](install-N
  ```yaml
     mysql:
         build: docker-images/mysql
+        hostname: sql-server
         volumes:
             - ./mysql:/var/lib/mysql
         environment:
