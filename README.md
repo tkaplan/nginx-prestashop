@@ -8,7 +8,7 @@ A dockerized version of [PrestaShop](https://www.prestashop.com/) using [Nginx](
 - Docker and Docker-compose on your system.
 - You have cloned [this](https://github.com/schlpbch/nginx-prestashop) repository.
 
-Here are the steps to get started
+Here are the steps to get started:
 
 1. Change into directory:
 
@@ -132,7 +132,7 @@ If you want to use a different certificate you can override the key and cert wit
 
 ### To Do
 
-- Add an example of how to link to an existing MySQL database.
+- Add an example of how to link to an existing MySQL database instance.
 
 ### Thanks
 
