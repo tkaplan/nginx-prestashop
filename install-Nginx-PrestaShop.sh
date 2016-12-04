@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# To start, clone this repository:
-git clone --depth 1 https://asc@code.intuitive-collaboration.com/scm/np/nginx-prestashop.git
-
-# Next change into directory:
-cd nginx-prestashop
-
 # Download the PrestaShop source
 wget https://www.prestashop.com/download/old/prestashop_1.6.1.10.zip
 
