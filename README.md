@@ -127,7 +127,7 @@ The screen shot below visualizes the setup (sceen shot taken from 'UI For Docker
 
 ### Using different SSL certificates
 
-PBy default dummy certificates are used (see [docker-images/nginx/Dockerfile](docker-images/nginx/Dockerfile)).
+By default dummy certificates are used (see [docker-images/nginx/Dockerfile](docker-images/nginx/Dockerfile)).
 If you want to use a different certificate you can override the key and cert with your own certificates. If proper certificates are used **HTTP2** is supported.
 
 ### To Do
