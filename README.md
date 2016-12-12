@@ -89,7 +89,7 @@ All the steps are defined in this script [install-Nginx-PrestaShop.sh](install-N
             MYSQL_ROOT_PASSWORD: mysql-root-pwd
             MYSQL_USER: mysql-user
             MYSQL_PASSWORD: mysql-pwd
-            MYSQL_DATABASE: prestahop
+            MYSQL_DATABASE: prestashop
  ```
 
 2. Start your PrestaShop using `docker-compose up`.
@@ -101,7 +101,7 @@ All the steps are defined in this script [install-Nginx-PrestaShop.sh](install-N
    Do not forget to delete the `install` folder in the PrestaShop directory in the end. As the directory now belongs to 'www-data' switch to that user or run as root:
 
  ```bash
-    sudo rm -r PrestaShop/install
+    sudo rm -r prestashop/install
  ```
 
 ### Stopping your PrestaShop

@@ -3,7 +3,6 @@
 # Download the PrestaShop source
 wget https://www.prestashop.com/download/old/prestashop_1.6.1.10.zip
 
-
 # Unzip the PrestaShop archive
 unzip prestashop_1.6.1.10.zip
 
