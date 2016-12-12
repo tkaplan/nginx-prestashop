@@ -1,6 +1,6 @@
 # PrestaShop using Nginx and PHP:FPM with Docker Compose
 
-A dockerized version of [PrestaShop](https://www.prestashop.com/) using [Nginx](https://www.nginx.com/), [PHP FastCGI Process Manager](http://php.net/manual/en/book.fpm.php) and [MySQL](https://www.mysql.com) linked together by [docker-compose](https://docs.docker.com/compose/).
+A dockerized version of [PrestaShop](https://www.prestashop.com/) using the latest stable versions of [Nginx](https://www.nginx.com/), [PHP FastCGI Process Manager](http://php.net/manual/en/book.fpm.php) and [MySQL](https://www.mysql.com) linked together by [docker-compose](https://docs.docker.com/compose/).
 
 ## Installation
 
