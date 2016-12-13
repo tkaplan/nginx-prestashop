@@ -5,7 +5,7 @@ A dockerized version of [PrestaShop](https://www.prestashop.com/) using the late
 ## Installation
 
 *Prerequisite*:
-- Docker and Docker-compose are installedon your system.
+- Docker and Docker-compose are installed on your system.
 - You have cloned [this](https://github.com/schlpbch/nginx-prestashop) repository.
 
 Here are the steps to get started:
