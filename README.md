@@ -5,7 +5,7 @@ A dockerized version of [PrestaShop](https://www.prestashop.com/) using the late
 ## Installation
 
 *Prerequisite*:
-- Docker and Docker-compose on your system.
+- Docker and Docker-compose are installedon your system.
 - You have cloned [this](https://github.com/schlpbch/nginx-prestashop) repository.
 
 Here are the steps to get started:
@@ -120,7 +120,7 @@ The dockerized version of your PrestaShop consists of the following containers:
   4. [phpMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) PHP My Admin image (on port 9010)
   5. [UI For Docker](https://hub.docker.com/r/uifd/ui-for-docker/) UI for Docker image (on port 9000). **Added for illustrative purposes only, not needed for production.**
 
-The screen shot below visualizes the setup (sceen shot taken from 'UI For Docker', tab 'Containers Network'):
+The screen shot below visualizes the setup (screen shot taken from 'UI For Docker', tab 'Containers Network'):
 
 [![NGINX PrestaShop: Containers Network](documentation/containersNetwork.png)](documentation/containersNetwork-png)
 
