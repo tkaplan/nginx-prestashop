@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM docker2021repos/nginx:latest
 
 MAINTAINER Andreas Schlapbach <schlpbch@gmail.com>
 
